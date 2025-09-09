@@ -9,7 +9,7 @@
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>DistantObject</RootNamespace>
     <AssemblyName>DistantObject</AssemblyName>
-    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <TargetFrameworkProfile />
     <BaseIntermediateOutputPath>..\..\obj\DistantObject</BaseIntermediateOutputPath>
@@ -40,18 +40,46 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
-    <Reference Include="KSPe.Light.DOE">
-      <HintPath>..\..\..\..\..\..\LIB\plugins\KSPe.Light.DOE.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
-    <Reference Include="Assembly-CSharp">
-      <HintPath>..\..\..\..\..\..\LIB\managed\1.4.1\Assembly-CSharp.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
-    <Reference Include="UnityEngine">
-      <HintPath>..\..\..\..\..\..\LIB\managed\1.4.1\UnityEngine.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
+	  <Reference Include="KSPe.Light.DOE">
+		  <HintPath>$(KSPRoot)\GameData\DistantObject\Plugins\KSPe.Light.DOE.dll</HintPath>
+		  <Private>False</Private>
+	  </Reference>
+	  <Reference Include="Assembly-CSharp">
+		  <HintPath>$(KSPRoot)\KSP_x64_Data\Managed\Assembly-CSharp.dll</HintPath>
+		  <Private>False</Private>
+	  </Reference>
+	  <Reference Include="UnityEngine">
+		  <HintPath>$(KSPRoot)\KSP_x64_Data\Managed\UnityEngine.dll</HintPath>
+		  <Private>False</Private>
+	  </Reference>
+	  <Reference Include="UnityEngine.AnimationModule">
+		  <HintPath>$(KSPRoot)\KSP_x64_Data\Managed\UnityEngine.AnimationModule.dll</HintPath>
+		  <Private>False</Private>
+	  </Reference>
+	  <Reference Include="UnityEngine.CoreModule">
+		  <HintPath>$(KSPRoot)\KSP_x64_Data\Managed\UnityEngine.CoreModule.dll</HintPath>
+		  <Private>False</Private>
+	  </Reference>
+	  <Reference Include="UnityEngine.PhysicsModule">
+		  <HintPath>$(KSPRoot)\KSP_x64_Data\Managed\UnityEngine.PhysicsModule.dll</HintPath>
+		  <Private>False</Private>
+	  </Reference>
+	  <Reference Include="UnityEngine.UI">
+		  <HintPath>$(KSPRoot)\KSP_x64_Data\Managed\UnityEngine.UI.dll</HintPath>
+		  <Private>False</Private>
+	  </Reference>
+	  <Reference Include="UnityEngine.IMGUIModule">
+		  <HintPath>$(KSPRoot)\KSP_x64_Data\Managed\UnityEngine.IMGUIModule.dll</HintPath>
+		  <Private>False</Private>
+	  </Reference>
+	  <Reference Include="UnityEngine.TextRenderingModule">
+		  <HintPath>$(KSPRoot)\KSP_x64_Data\Managed\UnityEngine.TextRenderingModule.dll</HintPath>
+		  <Private>False</Private>
+	  </Reference>
+	  <Reference Include="UnityEngine.InputLegacyModule">
+		  <HintPath>$(KSPRoot)\KSP_x64_Data\Managed\UnityEngine.InputLegacyModule.dll</HintPath>
+		  <Private>False</Private>
+	  </Reference>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="DarkenSky.cs" />
@@ -62,22 +90,12 @@
     <Compile Include="Utils.cs" />
     <Compile Include="VesselDraw.cs" />
     <Compile Include="Properties\LegalMamboJambo.cs" />
-    <Compile Include="Properties\Version.cs">
-      <DependentUpon>Version.tt</DependentUpon>
-    </Compile>
     <Compile Include="Startup.cs" />
     <Compile Include="Log.cs" />
     <Compile Include="Contracts\MeshEngine.cs" />
     <Compile Include="Settings.cs" />
     <Compile Include="Globals.cs" />
     <Compile Include="Contracts\SolarSystem.cs" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Properties\Version.tt">
-      <Generator>TextTemplatingFileGenerator</Generator>
-      <LastGenOutput>Version.cs</LastGenOutput>
-    </None>
-    <None Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Contracts\" />

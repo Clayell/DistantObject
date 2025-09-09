@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Express 2013 for Windows Desktop
-VisualStudioVersion = 12.0.21005.1
+# Visual Studio Version 17
+VisualStudioVersion = 17.14.36414.22 d17.14
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DistantObject", "Source\DistantObject\DistantObject.csproj", "{CFA036CD-0BD0-4363-9A4B-621567C9F5E3}"
 EndProject
@@ -32,33 +32,21 @@ Global
 		{074F8FA7-0AAF-4A54-84F1-08F631DD3F94}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{074F8FA7-0AAF-4A54-84F1-08F631DD3F94}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{074F8FA7-0AAF-4A54-84F1-08F631DD3F94}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{074F8FA7-0AAF-4A54-84F1-08F631DD3F94}.Release|Any CPU.Build.0 = Release|Any CPU
 		{7E036F7E-905C-41DB-8C34-4D6D0C4B1984}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{7E036F7E-905C-41DB-8C34-4D6D0C4B1984}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7E036F7E-905C-41DB-8C34-4D6D0C4B1984}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{7E036F7E-905C-41DB-8C34-4D6D0C4B1984}.Release|Any CPU.Build.0 = Release|Any CPU
 		{D481B9E8-A27C-444F-81C4-4155C460BAED}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{D481B9E8-A27C-444F-81C4-4155C460BAED}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D481B9E8-A27C-444F-81C4-4155C460BAED}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{D481B9E8-A27C-444F-81C4-4155C460BAED}.Release|Any CPU.Build.0 = Release|Any CPU
 		{88CF752F-DE65-4258-AF31-4AC19E80FE29}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{88CF752F-DE65-4258-AF31-4AC19E80FE29}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{88CF752F-DE65-4258-AF31-4AC19E80FE29}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{88CF752F-DE65-4258-AF31-4AC19E80FE29}.Release|Any CPU.Build.0 = Release|Any CPU
 		{C6966FC9-11BD-4C9A-A477-8093ED4B0E04}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{C6966FC9-11BD-4C9A-A477-8093ED4B0E04}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C6966FC9-11BD-4C9A-A477-8093ED4B0E04}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{C6966FC9-11BD-4C9A-A477-8093ED4B0E04}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
-	EndGlobalSection
-	GlobalSection(MonoDevelopProperties) = preSolution
-		Policies = $0
-		$0.TextStylePolicy = $1
-		$1.FileWidth = 132
-		$1.EolMarker = Unix
-		$1.scope = text/plain
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{074F8FA7-0AAF-4A54-84F1-08F631DD3F94} = {9EEC402A-E8CB-4F64-BAD8-65CCEBBE1A70}
@@ -66,5 +54,15 @@ Global
 		{D481B9E8-A27C-444F-81C4-4155C460BAED} = {9EEC402A-E8CB-4F64-BAD8-65CCEBBE1A70}
 		{88CF752F-DE65-4258-AF31-4AC19E80FE29} = {A98FFF8B-0352-4F99-8B0F-AEEDA90A980B}
 		{C6966FC9-11BD-4C9A-A477-8093ED4B0E04} = {A98FFF8B-0352-4F99-8B0F-AEEDA90A980B}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {92904CFA-0FD4-46B4-856A-4CC3C259C9B1}
+	EndGlobalSection
+	GlobalSection(MonoDevelopProperties) = preSolution
+		Policies = $0
+		$0.TextStylePolicy = $1
+		$1.FileWidth = 132
+		$1.EolMarker = Unix
+		$1.scope = text/plain
 	EndGlobalSection
 EndGlobal
