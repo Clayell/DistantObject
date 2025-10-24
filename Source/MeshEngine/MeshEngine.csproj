@@ -27,21 +27,23 @@
     <WarningLevel>4</WarningLevel>
     <ConsolePause>false</ConsolePause>
   </PropertyGroup>
-  <ItemGroup>
-    <Reference Include="System" />
-    <Reference Include="KSPe.Light.DOE">
-      <HintPath>..\..\..\..\..\..\LIB\plugins\KSPe.Light.DOE.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
-    <Reference Include="Assembly-CSharp">
-      <HintPath>..\..\..\..\..\..\LIB\managed\1.4.1\Assembly-CSharp.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
-    <Reference Include="UnityEngine">
-      <HintPath>..\..\..\..\..\..\LIB\managed\1.4.1\UnityEngine.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
-  </ItemGroup>
+	<ItemDefinitionGroup>
+		<Reference>
+			<Private>False</Private>
+		</Reference>
+	</ItemDefinitionGroup>
+	<ItemGroup>
+		<Reference Include="System" />
+		<Reference Include="$(KSPRoot)\KSP_x64_Data\Managed\Assembly-CSharp.dll" />
+		<Reference Include="$(KSPRoot)\KSP_x64_Data\Managed\UnityEngine.dll" />
+		<Reference Include="$(KSPRoot)\KSP_x64_Data\Managed\UnityEngine.CoreModule.dll" />
+		<Reference Include="$(KSPRoot)\GameData\DistantObject\Plugins\KSPe.Light.DOE.dll" />
+		<Reference Include="$(KSPRoot)\KSP_x64_Data\Managed\UnityEngine.CoreModule.dll" />
+		<Reference Include="$(KSPRoot)\KSP_x64_Data\Managed\UnityEngine.InputLegacyModule.dll" />
+		<Reference Include="$(KSPRoot)\KSP_x64_Data\Managed\UnityEngine.PhysicsModule.dll" />
+		<Reference Include="$(KSPRoot)\KSP_x64_Data\Managed\UnityEngine.IMGUIModule.dll" />
+		<Reference Include="$(KSPRoot)\KSP_x64_Data\Managed\UnityEngine.TextRenderingModule.dll" />
+	</ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Implementation.cs" />
