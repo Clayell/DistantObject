@@ -7,7 +7,7 @@
     <OutputType>Library</OutputType>
     <RootNamespace>DistantObject.MeshEngine</RootNamespace>
     <AssemblyName>MeshEngine</AssemblyName>
-    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+	<TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <BaseIntermediateOutputPath>..\..\obj\MeshEngine</BaseIntermediateOutputPath>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
