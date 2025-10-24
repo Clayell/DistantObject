@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
   <PropertyGroup>
@@ -9,7 +9,7 @@
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>DistantObject</RootNamespace>
     <AssemblyName>DistantObject</AssemblyName>
-    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <TargetFrameworkProfile />
     <BaseIntermediateOutputPath>..\..\obj\DistantObject</BaseIntermediateOutputPath>
@@ -27,7 +27,7 @@
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
-    <DebugType>pdbonly</DebugType>
+    <DebugType>none</DebugType>
     <Optimize>true</Optimize>
     <OutputPath>..\..\bin\Release\</OutputPath>
     <DefineConstants>TRACE</DefineConstants>
@@ -38,20 +38,22 @@
   <PropertyGroup>
     <StartupObject />
   </PropertyGroup>
+  <ItemDefinitionGroup>
+    <Reference>
+      <Private>False</Private>
+    </Reference>
+  </ItemDefinitionGroup>
   <ItemGroup>
     <Reference Include="System" />
-    <Reference Include="Assembly-CSharp">
-      <HintPath>..\..\..\..\..\..\LIB\managed\1.4.1\Assembly-CSharp.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
-    <Reference Include="UnityEngine">
-      <HintPath>..\..\..\..\..\..\LIB\managed\1.4.1\UnityEngine.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
-    <Reference Include="KSPe.Light.DOE">
-      <HintPath>..\..\..\..\..\..\LIB\plugins\KSPe.Light.DOE.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
+    <Reference Include="$(KSPRoot)\KSP_x64_Data\Managed\Assembly-CSharp.dll" />
+    <Reference Include="$(KSPRoot)\KSP_x64_Data\Managed\UnityEngine.dll" />
+    <Reference Include="$(KSPRoot)\KSP_x64_Data\Managed\UnityEngine.CoreModule.dll" />
+    <Reference Include="$(KSPRoot)\GameData\DistantObject\Plugins\KSPe.Light.DOE.dll" />
+	<Reference Include="$(KSPRoot)\KSP_x64_Data\Managed\UnityEngine.AnimationModule.dll" />
+    <Reference Include="$(KSPRoot)\KSP_x64_Data\Managed\UnityEngine.InputLegacyModule.dll" />
+    <Reference Include="$(KSPRoot)\KSP_x64_Data\Managed\UnityEngine.PhysicsModule.dll" />
+    <Reference Include="$(KSPRoot)\KSP_x64_Data\Managed\UnityEngine.IMGUIModule.dll" />
+    <Reference Include="$(KSPRoot)\KSP_x64_Data\Managed\UnityEngine.TextRenderingModule.dll" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="DarkenSky.cs" />
@@ -64,6 +66,8 @@
     <Compile Include="Properties\LegalMamboJambo.cs" />
     <Compile Include="Properties\Version.cs">
       <DependentUpon>Version.tt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
     </Compile>
     <Compile Include="Startup.cs" />
     <Compile Include="Log.cs" />
@@ -80,13 +84,14 @@
     </None>
     <None Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
-    <Folder Include="Contracts\" />
-    <Folder Include="Debug\" />
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <PropertyGroup>
-    <PostBuildEvent></PostBuildEvent>
+    <PostBuildEvent>
+    </PostBuildEvent>
   </PropertyGroup>
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
